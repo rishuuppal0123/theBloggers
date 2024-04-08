@@ -61,6 +61,7 @@ const createPost = async (req, res, next) => {
 const getPosts = async (req, res, next) => {
     try {
         const posts = await Post.find()
+        
         res.status(201).json(posts)
     } catch (error) {
        return next(new HttpError(error)) 
