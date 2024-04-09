@@ -19,6 +19,7 @@ import EditPost from './pages/EditPost';
 import Logout from './pages/Logout';
 import DeletePost from './pages/DeletePost';
 import UserProvider from './context/userContext';
+import Posts from './components/Posts';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>,
     children: [
       {index: true, element: <Home/>},
+      {path: "posts", element: <Posts/>},
       {path: "posts/:id", element: <PostDetail/>},
       {path: "register", element: <Register/>}, 
       {path: "login", element: <Login/>},

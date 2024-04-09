@@ -231,8 +231,9 @@ footer {
 
 .footer__copyright {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   text-align: center;
   border-top: 2px solid var(--color-gray-700);
   padding: 1rem;
